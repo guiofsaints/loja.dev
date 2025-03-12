@@ -8,17 +8,6 @@ import { Button } from "@/components/ui/button"
 // Lista de domínios disponíveis
 const domains = [
   {
-    name: "escola.dev",
-    price: "Consultar",
-    description: "Domínio premium para instituições educacionais",
-    benefits: [
-      "Ideal para escolas e cursos online",
-      "Nome memorável e relevante para educação",
-      "Extensão .dev valorizada para tecnologia educacional",
-      "Excelente para projetos educacionais tecnológicos",
-    ],
-  },
-  {
     name: "loja.dev",
     price: "Consultar",
     description: "Domínio premium para e-commerce de tecnologia",
@@ -29,6 +18,18 @@ const domains = [
       "Valorização crescente no mercado digital",
     ],
   },
+  {
+    name: "escola.dev",
+    price: "Consultar",
+    description: "Domínio premium para instituições educacionais",
+    benefits: [
+      "Ideal para escolas e cursos online",
+      "Nome memorável e relevante para educação",
+      "Extensão .dev valorizada para tecnologia educacional",
+      "Excelente para projetos educacionais tecnológicos",
+    ],
+  },
+
   {
     name: "faculdade.dev",
     price: "Consultar",
