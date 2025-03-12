@@ -40,6 +40,17 @@ const domains = [
       "Diferencial para instituições inovadoras",
     ],
   },
+  {
+    name: "jovem.dev",
+    price: "Consultar",
+    description: "Domínio premium para iniciativas educacionais e comunidades jovens de tecnologia",
+    benefits: [
+      "Perfeito para projetos voltados à formação de jovens desenvolvedores",
+      "Nome moderno e fácil de lembrar",
+      "Extensão .dev valorizada para tecnologia e inovação",
+      "Ideal para comunidades, cursos e programas educacionais"
+    ]
+  }
 ]
 
 export default function DomainSalesPage() {
