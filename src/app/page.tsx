@@ -82,7 +82,7 @@ export default function DomainSalesPage() {
                 <div className="grid md:grid-cols-3 gap-4">
                   <div className="md:col-span-2 p-6">
                     <h2 className="text-3xl font-bold text-foreground mb-2 flex items-center">
-                      <span className="text-primary">{domain.name}</span>
+                      <span className="text-green-400">{domain.name}</span>
                     </h2>
                     <p className="text-muted-foreground mb-4">{domain.description}</p>
 
@@ -90,7 +90,7 @@ export default function DomainSalesPage() {
                     <ul className="space-y-2 mb-6">
                       {domain.benefits.map((benefit, i) => (
                         <li key={i} className="flex items-start gap-2">
-                          <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                          <Check className="h-5 w-5 text-green-400 mt-0.5 flex-shrink-0" />
                           <span className="text-sm text-muted-foreground">{benefit}</span>
                         </li>
                       ))}
