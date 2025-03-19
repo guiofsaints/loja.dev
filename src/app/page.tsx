@@ -55,9 +55,6 @@ const domains = [
 ]
 
 export default function DomainSalesPage() {
-  // Substitua com o número de WhatsApp real (com código do país)
-  const whatsappNumber = "11945176035"
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-background/95">
       <header className="container mx-auto py-6 px-4 md:py-8 border-b border-border/40">
@@ -68,7 +65,7 @@ export default function DomainSalesPage() {
               LojaDev
             </span>
           </div>
-          <WhatsAppButton number={whatsappNumber} text="Fale Conosco" variant="outline" />
+          <WhatsAppButton text="Fale Conosco" variant="outline" />
         </div>
       </header>
 
@@ -120,10 +117,7 @@ export default function DomainSalesPage() {
                             size="sm"
                             className="text-primary p-0 h-auto"
                             onClick={() => {
-                              const encodedMessage = encodeURIComponent(
-                                `Olá! Estou interessado no domínio ${domain.name}. Qual o valor?`,
-                              )
-                              window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, "_blank")
+                              window.open(`https://wa.me/5511945176035`, "_blank")
                             }}
                           >
                             <MessageCircle className="h-4 w-4 ml-1" />
@@ -138,9 +132,8 @@ export default function DomainSalesPage() {
                     </div>
 
                     <WhatsAppButton
-                      number={whatsappNumber}
                       text="Tenho interesse"
-                      message={`Olá! Estou interessado no domínio ${domain.name}. Poderia me informar o valor e condições?`}
+                      message={`Olá! Estou interessado no domínio. Poderia me informar o valor e condições?`}
                       className="w-full"
                     />
                   </div>

@@ -6,7 +6,6 @@ import { useState } from "react"
 import { cn } from "@/lib/utils"
 
 interface WhatsAppButtonProps {
-  number: string
   text: string
   message?: string
   variant?: "default" | "outline" | "secondary" | "ghost" | "link" | "destructive"
@@ -15,9 +14,7 @@ interface WhatsAppButtonProps {
 }
 
 export default function WhatsAppButton({
-  number,
   text,
-  message = "",
   variant = "default",
   size = "default",
   className,
@@ -25,8 +22,7 @@ export default function WhatsAppButton({
   const [isHovering, setIsHovering] = useState(false)
 
   const handleClick = () => {
-    const encodedMessage = encodeURIComponent(message)
-    window.open(`https://wa.me/${number}?text=${encodedMessage}`, "_blank")
+    window.open(`https://wa.me/5511945176035`, "_blank")
   }
 
   return (
