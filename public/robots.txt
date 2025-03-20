@@ -1,0 +1,35 @@
+# robots.txt for https://escola.dev
+# Last updated: 2025-03-01
+
+User-agent: *
+Allow: /
+
+# Especificar localização do sitemap
+Sitemap: https://escola.dev/sitemap.xml
+
+# Regras específicas para bots de busca
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 5
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 5
+
+User-agent: Yandexbot
+Allow: /
+Crawl-delay: 10
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 10
+
+# Impedir que bots de baixa qualidade consumam recursos
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Crawl-delay: 20
+
+User-agent: SemrushBot
+Crawl-delay: 20
